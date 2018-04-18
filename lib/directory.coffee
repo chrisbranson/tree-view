@@ -185,7 +185,7 @@ class Directory
       names = fs.readdirSync(@path)
     catch error
       names = []
-    names.sort(new Intl.Collator(undefined, {numeric: true, sensitivity: "base"}).compare)
+    # names.sort(new Intl.Collator(undefined, {numeric: true, sensitivity: "base"}).compare)
 
     files = []
     directories = []
